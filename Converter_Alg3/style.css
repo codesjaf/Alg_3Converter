@@ -1,0 +1,222 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+body {
+  margin: 0px auto;
+  /* width: 1152px; */
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  background-color: #f5f5f6;
+  width: 100%;
+}
+
+img {
+  height: 23px;
+  width: 89px;
+  margin-top: 13px;
+  margin-left: 90px;
+}
+
+.nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav ul li {
+  width: 44px;
+  margin: 0px 50px;
+  height: 19px;
+  color: #959ba4;
+}
+
+.login-btn {
+  height: 33px;
+  width: 58px;
+  font-family: Roboto;
+  font-size: 11px;
+  font-weight: bold;
+  background-color: white;
+  border: none;
+  border-radius: 4px;
+  margin-top: 9px;
+  margin-right: 100px;
+}
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.left-side {
+  margin-top: 33px;
+  margin-right: 100px;
+}
+
+.right-side {
+  margin-top: 33px;
+  margin-left: 100px;
+}
+
+.content-text {
+  height: 32px;
+  width: 100%;
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 42px;
+  text-align: center;
+  margin-top: 56px;
+}
+
+.form_radio_group {
+  display: flex;
+  height: 30px;
+  width: 259px;
+  border-radius: 3px;
+  color: #c6c6c6;
+}
+
+.form_radio_group input[type="radio"] {
+  display: none;
+}
+
+.form_radio_group label {
+  display: inline-block;
+  cursor: pointer;
+  padding: 0px 15px;
+  line-height: 34px;
+  border: 1px solid #999;
+  border-right: none;
+}
+
+.form_radio_group .form_radio_group-item:first-child label {
+  border-radius: 6px 0 0 6px;
+}
+
+.form_radio_group .form_radio_group-item:last-child label {
+  border-radius: 0 6px 6px 0;
+  border-right: 1px solid #999;
+}
+
+/* Checked */
+.form_radio_group input[type="radio"]:checked + label {
+  background: #833ae0;
+  color: #ffffff;
+}
+
+/* Hover */
+.form_radio_group label:hover {
+  color: #666;
+}
+
+.form-text {
+  font-family: Roboto;
+  color: #9f9f9f;
+  height: 28px;
+  width: 120px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: left;
+}
+
+.money-text {
+  margin-top: 20px;
+  height: 102px;
+  width: 259px;
+  border-radius: 3px;
+  border: 1px solid #e5e5e5;
+}
+
+.money-text input {
+  height: 38px;
+  width: 224px;
+  font-weight: 700;
+  font-size: 36px;
+  text-align: left;
+  border: none;
+  outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  margin: 0;
+}
+
+.converter-text {
+  font-family: Roboto;
+  color: #c6c6c6;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  text-align: left;
+  margin-top: 25px;
+}

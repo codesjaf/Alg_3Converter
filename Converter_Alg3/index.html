@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <img src="Assets/img/logo.png" alt="" />
+      <nav class="nav">
+        <ul>
+          <li>БАНК</li>
+          <li>БИЗНЕС</li>
+          <li>ИНВЕСТИЦИИ</li>
+          <li>СТРАХОВАНИЕ</li>
+          <li>МОБАЙЛ</li>
+          <li>ПУТЕШЕСТВИЯ</li>
+          <li>РАЗВЛЕЧЕНИЯ</li>
+        </ul>
+      </nav>
+      <button class="login-btn">ВОЙТИ</button>
+    </header>
+    <h1 class="content-text">Конвертер валют онлайн</h1>
+    <div class="content">
+      <div class="left-side">
+        <p class="form-text">У меня есть</p>
+        <div class="form_radio_group">
+          <div class="form_radio_group-item">
+            <input
+              id="radio-1"
+              type="radio"
+              name="radio1"
+              value="RUB"
+              checked="checked"
+            />
+            <label for="radio-1" class="input-label">RUB</label>
+          </div>
+          <div class="form_radio_group-item">
+            <input id="radio-2" type="radio" name="radio1" value="USD" />
+            <label for="radio-2" class="input-label">USD</label>
+          </div>
+          <div class="form_radio_group-item">
+            <input id="radio-3" type="radio" name="radio1" value="EUR" />
+            <label for="radio-3" class="input-label">EUR</label>
+          </div>
+          <div class="form_radio_group-item">
+            <input id="radio-4" type="radio" name="radio1" value="AZN" />
+            <label for="radio-4" class="input-label">AZN</label>
+          </div>
+        </div>
+        <div class="money-text">
+          <input type="number" class="money-input" />
+          <div>
+            <p class="converter-text" id="rateFrom"></p>
+          </div>
+        </div>
+      </div>
+      <div class="right-side">
+        <p class="form-text">Хочу приобрести</p>
+        <div class="form_radio_group">
+          <div class="form_radio_group-item">
+            <input id="radio-5" type="radio" name="radio2" value="RUB" />
+            <label for="radio-5" class="input-label">RUB</label>
+          </div>
+          <div class="form_radio_group-item">
+            <input
+              id="radio-6"
+              type="radio"
+              name="radio2"
+              value="USD"
+              checked="checked"
+            />
+            <label for="radio-6" class="input-label">USD</label>
+          </div>
+          <div class="form_radio_group-item">
+            <input id="radio-7" type="radio" name="radio2" value="EUR" />
+            <label for="radio-7" class="input-label">EUR</label>
+          </div>
+          <div class="form_radio_group-item">
+            <input id="radio-8" type="radio" name="radio2" value="AZN" />
+            <label for="radio-8" class="input-label">AZN</label>
+          </div>
+        </div>
+        <div class="money-text">
+          <input type="number" class="money-input" />
+          <div>
+            <p class="converter-text" id="rateIn"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./index.js" defer></script>
+  </body>
+</html>
